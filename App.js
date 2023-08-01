@@ -2,6 +2,7 @@ import { ImageBackground, Text, View } from "react-native";
 import appStyle from "./Styles/App.style";
 import hotBackground from "./assets/hot.png";
 import coldBackground from "./assets/cold.png";
+import InputTemperature from "./Components/InputTemperature";
 
 export default function App() {
   return (
@@ -10,9 +11,7 @@ export default function App() {
         <View>
           <Text>Température</Text>
         </View>
-        <View>
-          <Text>Input</Text>
-        </View>
+        <InputTemperature defaultValue={"12"} />
         <View>
           <Text>Bouton</Text>
         </View>
